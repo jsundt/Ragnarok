@@ -1,0 +1,25 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+@import 'fenrir/tools';  //At the very top, scss functions for fonts and colors
+
+@import 'base/config';   // Your project settings
+@import 'fenrir/awoken'; // Initiate the framework
+
+//---------------------------------//
+// All your SCSS files go here
+//---------------------------------//
+
+@import 'fenrir/utilities'; // Generate utility classes for use in html files
