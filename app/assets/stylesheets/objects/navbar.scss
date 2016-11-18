@@ -1,0 +1,40 @@
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(color('charcoal'), 0.95);
+  box-shadow: 0 1px 1px 0 $shadow;
+  display: flex;
+  z-index: 10;
+}
+
+  .navbar__item {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 spacing('25');
+    color: color('white', 70);
+    flex-grow: 1;
+
+    &.is-active {
+      color: color('white');
+      background: color('charcoal', 115);
+    }
+
+    &.is-disabled {
+      color: color('white', 25);
+      pointer-events: none;
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: color('white');
+      background: color('primary');
+      text-decoration: none;
+    }
+  }

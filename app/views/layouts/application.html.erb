@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'navigation/navbar' %>
+
+    <div class="content-wrap js-content-wrap u-padding-t-100">
+      <%= yield %>
+    </div>
   </body>
 </html>
