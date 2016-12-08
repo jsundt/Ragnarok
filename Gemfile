@@ -13,7 +13,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 
 ### Front-end framework
-gem 'fenrir', path: '../fenrir', branch: 'next'
+gem 'fenrir', path: '../fenrir'
 
 
 

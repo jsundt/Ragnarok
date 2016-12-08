@@ -1,0 +1,31 @@
+<header class="u-bg--primary u-padding-y-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="o-text--title">Testing and references for fenrir</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<% @navigation.each do |nav_item| %>
+  <section class="u-padding-y-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <%= link_to nav_item[:name], nav_item[:path] %>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+<footer class="u-bg--charcoal u-padding-y-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="o-text--body">Charlie</p>
+      </div>
+    </div>
+  </div>
+</footer>
