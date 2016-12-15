@@ -6,18 +6,16 @@ class TeamMembers
   def members
     [
       {
-        name: 'Home',
-        role: '',
-        image: '',
+        name: 'Fluffy McDoom',
+        role: 'Lead Rocket Surgeon',
+        avatar: 'http://placekitten.com/150/200',
         badges: '',
-        path: view_path.home_path,
       },
       {
         name: 'Colors',
-        role: '',
-        image: '',
+        role: 'String theorist',
+        avatar: 'http://placekitten.com/150/150',
         badges: '',
-        path: view_path.root_path,
       },
     ]
   end

@@ -7,4 +7,33 @@
 
 .c-profile-card {
   @include o-card();
+
+  display: flex;
 }
+
+  .c-profile-card__avatar {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .c-profile-card__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: spacing('25');
+  }
+
+    .c-profile-card__title {
+      @include o-text--('product');
+      font-family: $company-font;
+    }
+
+    .c-profile-card__description {
+      @include o-text--('note');
+      font-family: $company-font;
+    }

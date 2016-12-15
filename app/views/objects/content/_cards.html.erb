@@ -7,7 +7,11 @@
   <% @team_members.each do |tm| %>
     <div class="col-xs-12 col-md-6 col-xl-4">
       <div class="c-profile-card">
-        <p class="o-text--product o-text--company"><%= tm.to_s %></p>
+        <div class="c-profile-card__avatar" style="background-image: url('<%= tm[:avatar] %>')"></div>
+        <div class="c-profile-card__content">
+          <p class="c-profile-card__title"><%= tm[:name] %></p>
+          <p class="c-profile-card__description"><%= tm[:role] %></p>
+        </div>
       </div>
     </div>
   <% end %>
