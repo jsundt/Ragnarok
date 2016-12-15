@@ -26,6 +26,11 @@ class Navigation
         disabled: true,
       },
       {
+        name: 'Objects',
+        path: view_path.objects_path,
+        disabled: false,
+      },
+      {
         name: 'Internal Plugins',
         path: view_path.root_path,
         disabled: true,

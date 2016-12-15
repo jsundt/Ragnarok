@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   get '/', to: 'welcome#index', as: 'home'
   get '/typography', to: 'welcome#typography', as: 'typography'
+  get '/objects', to: 'welcome#objects', as: 'objects'
 end
