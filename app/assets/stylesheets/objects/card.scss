@@ -1,0 +1,50 @@
+
+
+
+//----------------------------------------------\\
+// Charlie card
+//----------------------------------------------\\
+// A reusable self contained block of content
+// Some of the modules using this as a base:
+// – TODO: Profile cards
+// – TODO: Content cards
+// – TODO: Modal / dialog boxes
+// – Document uploaders
+//----------------------------------------------\\
+
+@mixin o-card($background: color('white'), $color: color('charcoal')) {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  border-radius: $br;
+  margin: 15px 0;
+  color: $color;
+  background: $background;
+  box-shadow: 0 0 0 1px color('black', A5);
+
+  transition: background 0.2s,
+              color 0.2s;
+}
+
+@mixin o-card-variant($background: color('white'), $color: color('charcoal')) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin o-card-inverse($color: color('white')) {
+  @warn 'o-card-inverse is not in use at the moment...';
+}
+
+
+
+//----------------------------------------------\\
+// Charlie card utility classes
+//----------------------------------------------\\
+
+.o-card {
+  @include o-card;
+}
+
+  // .o-card--silver {
+  //   @include o-card-variant($background: color('silver'));
+  // }

@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
   end
 
   def objects
+    @team_members = TeamMembers.new().members
     render file: 'objects/index'
   end
 end

@@ -4,7 +4,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
-
-  </div>
+  <% @team_members.each do |tm| %>
+    <div class="col-xs-12 col-md-6 col-xl-4">
+      <div class="c-profile-card">
+        <p class="o-text--product o-text--company"><%= tm.to_s %></p>
+      </div>
+    </div>
+  <% end %>
 </div>
