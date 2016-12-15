@@ -1,0 +1,141 @@
+
+
+
+//-----------------------------------------\\
+// Button variables
+//-----------------------------------------\\
+
+
+//////////////// color, background, border
+$buttons: (
+  'charcoal': (
+    color('white'),
+    color('charcoal'),
+    color('charcoal', 115)
+  ),
+  'success': (
+    color('white'),
+    color('success'),
+    color('success', 115)
+  ),
+  'silver': (
+    color('charcoal'),
+    color('silver'),
+    color('silver', 115)
+  ),
+  'beta-115': (
+    color('charcoal'),
+    color('warning', 115),
+    color('warning', 130)
+  )
+);
+
+//////////////// color, background, border
+$button-hover-states: (
+  'to-danger': (
+    color('white'),
+    color('danger'),
+    color('danger', 115)
+  ),
+);
+
+
+
+//-----------------------------------------\\
+// # Reset buttons
+//-----------------------------------------\\
+
+%reset-btn {
+  background: transparent;
+  border: 0;
+  display: inline-block;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+  vertical-align: top; // make sure <button> renders inline with <a>
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+//-----------------------------------------\\
+// # Button Generation
+//-----------------------------------------\\
+
+.btn {
+  // Generate btn--%{name} classes for default and hover states
+  @include gen-buttons();
+
+
+  // Default button styling
+  @include o-text--('label');
+
+  border-radius: $br;
+  background: color('primary', 115);
+  border: 1px solid color('primary', 130);
+  color: color('white');
+  display: inline-block;
+  height: $form-height;
+  line-height: $form-height;
+  outline: none;
+  padding: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  vertical-align: top; // make sure <button> renders inline with <a>
+
+  @include min-width(768px) {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background: color('primary');
+    border-color: color('primary', 115);
+    color: color('white');
+    text-decoration: none;
+    outline: none;
+
+    transition: background 0.15s, border-color 0.15s, color 0.1s;
+  }
+
+  &:active {
+    background: color('primary', 115);
+    border-color: color('primary', 130);
+  }
+
+  &.is-loading {
+    background: color('primary', 70);
+    border-color: color('primary', 85);
+    color: color('white');
+    pointer-events: none;
+
+    &:hover {
+      //scss-lint:disable DuplicateProperty
+      cursor: default;
+      cursor: not-allowed;
+    }
+  }
+}
+
+// scss-lint:disable MergeableSelector
+// Needs to be here because of scss cascading
+.btn {
+  @include gen-button-hover();
+}
