@@ -22,3 +22,7 @@
 @import 'components/*';
 
 @import 'fenrir/utilities'; // Generate utility classes for use in html files
+
+body {
+  font-family: $charlie-font;
+}
