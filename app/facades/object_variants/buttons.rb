@@ -7,19 +7,19 @@ class ObjectVariants::Buttons
     [
       {
         name: 'Primary',
-        variant_class: '',
+        class: '',
       },
       {
         name: 'Silver',
-        variant_class: 'btn--silver',
+        class: 'btn--silver',
       },
       {
         name: 'Beta 115',
-        variant_class: 'btn--beta-115',
+        class: 'btn--beta-115',
       },
       {
         name: 'Success',
-        variant_class: 'btn--success',
+        class: 'btn--success',
       },
     ]
   end
