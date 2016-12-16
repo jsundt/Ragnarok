@@ -3,11 +3,17 @@
     <h1 class="o-text--title">Buttons</h1>
   </div>
 </div>
-<div class="row">
+<div class="row u-padding-b-50">
   <div class="col-xs-12">
-    <button type="button" class="btn">Button 1</button>
-    <button type="button" class="btn btn--silver">Button 1</button>
-    <button type="button" class="btn btn--beta-115">Button 1</button>
-    <button type="button" class="btn btn--success btn--to-danger">Button 1</button>
+    <% @buttons.variants.each do |btn| %>
+      <button type="button" class="btn <%= btn[:class] %>"><%= btn[:name] %></button>
+    <% end %>
+  </div>
+</div>
+<div class="row u-padding-b-50">
+  <div class="col-xs-12">
+    <% @buttons.hover_variants.each do |btn| %>
+      <button type="button" class="btn <%= btn[:class] %>"><%= btn[:name] %></button>
+    <% end %>
   </div>
 </div>
