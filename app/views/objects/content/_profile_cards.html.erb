@@ -1,0 +1,10 @@
+<div class="row u-padding-b-50">
+  <div class="col-xs-12">
+    <h1 class="o-text--title">Profile cards</h1>
+  </div>
+</div>
+<div class="row">
+  <% @team_members.each do |tm| %>
+    <%= render 'objects/cards/profile_card', tm: tm %>
+  <% end %>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-xs-4 col-md-2 col-xl-1">
+  <%= render 'objects/icons/rocket', variant: nil %>
+</div>
+
+<div class="col-xs-4 col-md-2 col-xl-1">
+  <%= render 'objects/icons/rocket', variant: 'app' %>
+</div>
+
+<div class="col-xs-4 col-md-2 col-xl-1">
+  <%= render 'objects/icons/rocket', variant: 'sm' %>
+</div>
+
+<div class="col-xs-4 col-md-2 col-xl-1 u-color--to-success">
+  <%= render 'objects/icons/rocket', variant: 'xl' %>
+</div>
+
+<div class="col-xs-12 u-color--charcoal">
+  <h1 class="c-text--headline u-text--center"><%= render 'objects/icons/suitcase', variant: 'inline' %>Icon inline in headline:<%= render 'objects/icons/rocket', variant: 'inline' %></h1>
+
+  <p class="c-text--body"><%= render 'objects/icons/error', variant: 'inline' %>Icon inline in paragraph of text. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <span class="u-color--success u-color--to-danger"><%= render 'objects/icons/success', variant: 'inline' %></span>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', <%= render 'objects/icons/rocket', variant: 'inline' %>making it look like readable English.</p>
+</div>

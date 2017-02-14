@@ -1,0 +1,74 @@
+
+
+
+//------------------------------------------\\
+// Typography defaults
+//------------------------------------------\\
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $charlie-font;
+}
+
+
+
+//------------------------------------------\\
+// Typography components default classes
+//------------------------------------------\\
+
+h1,
+.c-text--display {
+  @include c-text--display;
+}
+
+  .c-text--display-200 {
+    @include c-text--display-200;
+  }
+
+  .c-text--display-300 {
+    @include c-text--display-300;
+  }
+
+h2,
+.c-text--headline {
+  @include c-text--headline;
+}
+
+h3,
+.c-text--title {
+  @include c-text--title;
+}
+
+h4,
+.c-text--lead {
+  @include c-text--lead;
+}
+
+p,
+.c-text--body {
+  @include c-text--body;
+}
+
+  .c-text--product {
+    @include c-text--product;
+  }
+
+.c-text--note {
+  @include c-text--note;
+}
+
+  h5,
+  .c-text--label {
+    @include c-text--label;
+  }
+
+  h6,
+  .c-text--caption {
+    @include c-text--caption;
+  }

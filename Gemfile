@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 ### Base app
 gem 'rails', '~> 5.0.0'
 gem 'pg'
@@ -13,8 +12,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 
 ### Front-end framework
-gem 'fenrir', path: '../fenrir'
-
+gem 'fenrir', path: '../fenrir', branch: 'feature/type-components'
 
 
 

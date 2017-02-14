@@ -7,7 +7,6 @@
 
 .c-profile-card {
   @include o-card();
-
   display: flex;
 }
 
@@ -29,11 +28,11 @@
   }
 
     .c-profile-card__title {
-      @include o-text--('product');
+      @include c-text--product;
       font-family: $company-font;
     }
 
     .c-profile-card__description {
-      @include o-text--('note');
+      @include c-text--note;
       font-family: $company-font;
     }

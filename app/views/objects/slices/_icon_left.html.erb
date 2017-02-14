@@ -1,0 +1,7 @@
+<section class="o-slice clearfix <%= color_variant ||= '' %>">
+  <%= render "objects/icons/#{icon ||= 'rocket'}", variant: 'float-left' %>
+  <div style="padding-left: 5px; float: left;">
+    <h1 class="c-text--title"><%= name ||= "Rocket Launch!" %></h1>
+    <p class="c-text--product u-color-strength--70"><%= desc ||= "Today at 5" %></p>
+  </div>
+</section>

@@ -14,7 +14,7 @@ $buttons: (
     color('charcoal', 115)
   ),
   'success': (
-    color('white'),
+    color('charcoal'),
     color('success'),
     color('success', 115)
   ),
@@ -72,21 +72,22 @@ $button-hover-states: (
   // Generate btn--%{name} classes for default and hover states
   @include gen-buttons();
 
+  // Default button text styling
+  @include c-text--caption;
+  text-align: center;
+  text-decoration: none;
+  color: color('white');
+  line-height: $form-height;
+  opacity: 1;
 
   // Default button styling
-  @include o-text--('label');
-
+  height: $form-height;
   border-radius: $br;
   background: color('primary', 115);
   border: 1px solid color('primary', 130);
-  color: color('white');
   display: inline-block;
-  height: $form-height;
-  line-height: $form-height;
   outline: none;
   padding: 0 25px;
-  text-align: center;
-  text-decoration: none;
   margin-bottom: 10px;
   width: 100%;
   overflow: hidden;
