@@ -1,0 +1,7 @@
+<section class="o-slice clearfix <%= color_variant ||= '' %> <%= padding ||= 'u-padding-y-25' %>">
+  <% unless yield.empty? %>
+    <%= yield %>
+  <% else %>
+    <p class="c-text--label"><%= name ||= "Rocket Launch!" %></p>
+  <% end %>
+</section>

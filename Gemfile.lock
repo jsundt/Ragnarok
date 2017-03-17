@@ -1,7 +1,7 @@
 PATH
   remote: ../fenrir
   specs:
-    fenrir (0.1.8.4)
+    fenrir (0.1.10)
 
 GEM
   remote: https://rubygems.org/

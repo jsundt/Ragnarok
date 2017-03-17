@@ -1,0 +1,58 @@
+<div class="col-xs-12 col-md-6 col-xl-4">
+  <p>Section wrapper:</p>
+  <%= render 'objects/slices/icon_left' %>
+  <%= render 'objects/slices/icon_left', icon: 'success', name: '', desc: 'Something went correct! :)', color_variant: 'u-bg--success' %>
+  <%= render 'objects/slices/basic_slice' %>
+</div>
+
+<div class="col-xs-12 col-md-6 col-xl-4">
+  <p>Card wrapper:</p>
+  <div class="o-card">
+    <%= render 'objects/slices/icon_left' %>
+  </div>
+
+  <div class="o-card">
+    <%= render 'objects/slices/icon_left', icon: 'success', name: '', desc: 'Something went correct! :)', color_variant: 'u-bg--success' %>
+  </div>
+
+  <div class="o-card">
+    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' %>
+  </div>
+
+  <div class="o-card">
+    <%= render 'objects/slices/icon_left', color_variant: 'u-bg--charcoal', desc: '' %>
+    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' do %>
+      <h1 class="c-text--lead">About this launch</h1>
+      <p class="c-text--body"> Unfortunately box shadow must be defined as a single rule, without the ability, like border, to be broken up into separate parts for positioning</p>
+
+      <button class="o-btn u-bg--silver u-bg--to-primary" type="button">
+        <%= render 'objects/slices/basic_slice', name: 'More info' %>
+      </button>
+    <% end %>
+
+    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--silver u-text--center' do %>
+      <button class="o-btn u-bg--charcoal u-bg--to-danger" type="button">
+        <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'cancel' %>
+      </button>
+
+      <button class="o-btn u-bg--primary u-bg--to-success" type="button">
+        <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'Launch' %>
+      </button>
+    <% end %>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-6 col-xl-4">
+  <p>button wrapper:</p>
+  <button class="o-btn u-bg--to-primary" type="button">
+    <%= render 'objects/slices/icon_left' %>
+  </button>
+
+  <button class="o-btn u-bg--success u-bg--to-primary" type="button">
+    <%= render 'objects/slices/icon_left', icon: 'success', name: '', desc: 'Something went correct! :)' %>
+  </button>
+
+  <button class="o-btn u-bg--primary u-bg--to-danger" type="button">
+    <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100' %>
+  </button>
+</div>
