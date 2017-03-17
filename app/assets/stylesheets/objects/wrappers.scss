@@ -14,6 +14,7 @@
 }
 
 $button-variants: (
+  'white': color('white', 115),
   'primary': color('primary', 115),
   'success': color('success', 130),
   'charcoal': color('charcoal', 115),
@@ -21,6 +22,7 @@ $button-variants: (
 );
 
 $button-hover-variants: (
+  'to-white': color('white', 115),
   'to-primary': color('primary', 115),
   'to-success': color('success', 130),
   'charcoal': color('charcoal', 115),
