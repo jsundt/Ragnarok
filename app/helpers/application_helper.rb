@@ -1,4 +1,4 @@
 module ApplicationHelper
-  include Fenrir::Components
+  include Fenrir::Index
 
 end
