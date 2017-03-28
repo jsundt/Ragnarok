@@ -36,12 +36,6 @@
     <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' %>
   </div>
 
-  <%= ui_wrapper('section') do %>
-    <%= ui_slice('content', class: 'u-bg--labs u-padding-y-25') do %>
-      <p class="c-text--label">Test Launch!</p>
-    <% end %>
-  <% end %>
-
   <div class="o-card">
     <%= render 'objects/slices/icon_left', color_variant: 'u-bg--charcoal', desc: '' %>
     <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' do %>
@@ -59,6 +53,35 @@
       </button>
     <% end %>
   </div>
+
+  <%= ui_wrapper('card') do %>
+    <%= ui_slice('icon_left', class: 'u-padding-y-25 u-bg--charcoal') do %>
+      <p class="c-text--headline">Rocket launch</p>
+    <% end %>
+
+    <%= ui_slice('content', class: 'u-bg--white u-padding-y-25') do %>
+      <p class="c-text--label">Pages</p>
+      <p class="c-text--product">Company Profile</p>
+      <p class="c-text--product">Offices</p>
+      <p class="c-text--product">Teams</p>
+      <p class="c-text--product">Members</p>
+    <% end %>
+
+    <%= ui_wrapper('section', class: 'u-bg--success u-bg--to-primary') do %>
+      <%= ui_slice('icon_left', class: 'u-padding-y-25') do %>
+        <p class="c-text--headline">Rocket launch</p>
+      <% end %>
+    <% end %>
+
+    <%= ui_slice('content', class: 'u-bg--silver u-padding-y-25') do %>
+      <p class="c-text--label">Settings</p>
+      <p class="c-text--product">Company</p>
+      <p class="c-text--product">Time Off</p>
+      <p class="c-text--product">Offices</p>
+      <p class="c-text--product">Teams</p>
+      <p class="c-text--product">Members</p>
+    <% end %>
+  <% end %>
 </div>
 
 <div class="col-xs-12 col-md-6 col-xl-4">
