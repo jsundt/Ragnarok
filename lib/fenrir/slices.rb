@@ -25,7 +25,7 @@ module Fenrir::Slices
       class: "u-padding-y-25"
     }.merge(options)
 
-    content_tag(:div, class: "o-slice clearfix #{options[:class]}") do
+    content_tag(:div, class: "w-slice clearfix #{options[:class]}") do
       content
     end
   end
@@ -37,7 +37,7 @@ module Fenrir::Slices
       class: "u-padding-y-25"
     }.merge(options)
 
-    content_tag(:div, class: "o-slice clearfix #{options[:class]}") do
+    content_tag(:div, class: "w-slice clearfix #{options[:class]}") do
       render("objects/icons/#{options[:icon]}", variant: options[:icon_variant]) +
       content_tag(:div, style: 'padding-left: 5px; float: left;') do
         content

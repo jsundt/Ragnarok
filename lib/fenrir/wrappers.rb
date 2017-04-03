@@ -23,7 +23,7 @@ module Fenrir::Wrappers
   private
 
   def ui_wrapper_button(options, content)
-    content_tag(:button, type: "button", class: "o-btn u-bg--to-primary #{options[:class]}") do
+    content_tag(:button, type: "button", class: "w-btn u-bg--to-primary #{options[:class]}") do
       content
     end
   end
@@ -35,7 +35,7 @@ module Fenrir::Wrappers
   end
 
   def ui_wrapper_card(options, content)
-    content_tag(:div, class: "o-card test #{options[:class]}") do
+    content_tag(:div, class: "w-card test #{options[:class]}") do
       content
     end
   end

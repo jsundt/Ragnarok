@@ -5,7 +5,7 @@
 // Charlie slice wrapper
 //----------------------------------------------\\
 
-@mixin o-slice() {
+@mixin w-slice() {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -15,7 +15,7 @@
 // Charlie card wrapper
 //----------------------------------------------\\
 
-@mixin o-card() {
+@mixin w-card() {
   position: relative;
   width: 100%;
   border-radius: $br;
@@ -41,7 +41,7 @@
 // Charlie button wrapper
 //----------------------------------------------\\
 
-@mixin o-btn() {
+@mixin w-btn() {
   // Reset button
   background: transparent;
   border: 0;
@@ -59,11 +59,10 @@
   // Set defaults
   position: relative;
   border-radius: 4px;
-  box-shadow: 0 0 0 1px color('black', A5),
-              inset 0 -2px 0 0 color('black', A5);
+  border: 1px solid transparent;
+  border-bottom-width: 2px;
 
   transition: background-color 0.2s,
-              box-shadow 0.2s,
               border-color 0.2s,
               color 0.2s;
 
@@ -83,45 +82,13 @@
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    box-shadow: 0 0 0 1px color('black', A5),
-                inset 0 -2px 0 0 color('black', A5);
 
     transition: background-color 0.15s,
-                box-shadow 0.15s,
                 border-color 0.15s,
                 color 0.1s;
   }
 
   &:active {
     background-color: color('black', A5);
-  }
-}
-
-@mixin o-btn--variant($variants) {
-  @each $color in map-keys($variants) {
-    $value: map-get($variants, $color);
-
-    &.u-bg--#{$color} {
-      box-shadow: 0 0 0 1px $value,
-                  inset 0 -2px 0 0 $value;
-    }
-  }
-}
-
-@mixin o-btn--to-variant($variants) {
-  @each $color in map-keys($variants) {
-    $value: map-get($variants, $color);
-
-    &.u-bg--#{$color} {
-      &:hover,
-      &:focus {
-        box-shadow: 0 0 0 1px $value,
-                    inset 0 -2px 0 0 $value;
-      }
-
-      &:active {
-        background-color: $value;
-      }
-    }
   }
 }

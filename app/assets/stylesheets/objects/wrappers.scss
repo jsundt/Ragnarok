@@ -5,33 +5,14 @@
 // Charlie card utility classes
 //----------------------------------------------\\
 
-.o-slice {
-  @include o-slice;
+.w-slice {
+  @include w-slice;
 }
 
-.o-card {
-  @include o-card;
+.w-card {
+  @include w-card;
 }
 
-$button-variants: (
-  'white': color('white', 115),
-  'primary': color('primary', 115),
-  'success': color('success', 130),
-  'charcoal': color('charcoal', 115),
-  'silver': color('silver', 115),
-);
-
-$button-hover-variants: (
-  'to-white': color('white', 115),
-  'to-primary': color('primary', 115),
-  'to-success': color('success', 130),
-  'charcoal': color('charcoal', 115),
-  'to-danger': color('danger', 115),
-);
-
-.o-btn {
-  @include o-btn;
-
-  @include o-btn--variant($button-variants);
-  @include o-btn--to-variant($button-hover-variants);
+.w-btn {
+  @include w-btn;
 }

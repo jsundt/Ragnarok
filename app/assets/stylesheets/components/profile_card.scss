@@ -6,7 +6,7 @@
 //----------------------------------------------\\
 
 .c-profile-card {
-  @include o-card();
+  @include w-card();
   display: flex;
 }
 

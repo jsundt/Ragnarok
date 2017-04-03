@@ -1,4 +1,10 @@
-<section class="o-slice clearfix <%= color_variant ||= '' %> <%= padding ||= 'u-padding-y-25' %>">
+<%# This is a helper html file that sets the correct paddings etc for a basic slice %>
+
+<% css_padding = defined?(padding) ? "u-padding-#{padding}" : "u-padding-y-20" %>
+<% css_color = defined?(color_variant) ? "u-bg--#{color_variant}" : "" %>
+<% css_classes = "w-slice clearfix #{css_color} #{css_padding}".strip %>
+
+<section class="<%= css_classes %>">
   <% unless yield.empty? %>
     <%= yield %>
   <% else %>

@@ -5,18 +5,18 @@
   <%= render 'objects/slices/basic_slice' %>
 
   <%= render 'objects/slices/icon_left', color_variant: 'u-bg--charcoal', desc: '' %>
-  <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' do %>
+  <%= render 'objects/slices/basic_slice', color_variant: 'white' do %>
     <h1 class="c-text--lead">About this launch</h1>
     <p class="c-text--body"> Unfortunately box shadow must be defined as a single rule, without the ability, like border, to be broken up into separate parts for positioning</p>
   <% end %>
 
-  <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--silver u-text--center' do %>
-    <button class="o-btn u-bg--charcoal u-bg--to-danger" type="button">
-      <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'cancel' %>
+  <%= render 'objects/slices/basic_slice', color_variant: 'silver u-text--center' do %>
+    <button class="w-btn u-bg--charcoal u-bg--to-danger" type="button">
+      <%= render 'objects/slices/basic_slice', name: 'cancel' %>
     </button>
 
-    <button class="o-btn u-bg--primary u-bg--to-success" type="button">
-      <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'Launch' %>
+    <button class="w-btn u-bg--primary u-bg--to-success" type="button">
+      <%= render 'objects/slices/basic_slice', name: 'Launch' %>
     </button>
   <% end %>
 </div>
@@ -28,27 +28,27 @@
     <%= render 'objects/slices/icon_left' %>
   <% end %>
 
-  <div class="o-card">
+  <div class="w-card">
     <%= render 'objects/slices/icon_left', icon: 'success', name: '', desc: 'Something went correct! :)', color_variant: 'u-bg--success' %>
   </div>
 
-  <div class="o-card">
-    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' %>
+  <div class="w-card">
+    <%= render 'objects/slices/basic_slice', color_variant: 'white' %>
   </div>
 
-  <div class="o-card">
+  <div class="w-card">
     <%= render 'objects/slices/icon_left', color_variant: 'u-bg--charcoal', desc: '' %>
-    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--white' do %>
+    <%= render 'objects/slices/basic_slice', color_variant: 'white' do %>
       <h1 class="c-text--lead">About this launch</h1>
       <p class="c-text--body"> Unfortunately box shadow must be defined as a single rule, without the ability, like border, to be broken up into separate parts for positioning</p>
     <% end %>
 
-    <%= render 'objects/slices/basic_slice', color_variant: 'u-bg--silver u-text--center' do %>
-      <button class="o-btn u-bg--charcoal u-bg--to-danger" type="button">
+    <%= render 'objects/slices/basic_slice', color_variant: 'silver u-text--center' do %>
+      <button class="w-btn u-bg--charcoal u-bg--to-danger" type="button">
         <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'cancel' %>
       </button>
 
-      <button class="o-btn u-bg--primary u-bg--to-success" type="button">
+      <button class="w-btn u-bg--primary u-bg--to-success" type="button">
         <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100', name: 'Launch' %>
       </button>
     <% end %>
@@ -86,25 +86,25 @@
 
 <div class="col-xs-12 col-md-6 col-xl-4">
   <p>button wrapper:</p>
-  <button class="o-btn u-bg--to-primary" type="button">
+  <button class="w-btn u-bg--to-primary" type="button">
     <%= render 'objects/slices/icon_left' %>
   </button>
 
   <br>
   <br>
 
-  <button class="o-btn u-bg--success u-bg--to-primary" type="button">
+  <button class="w-btn u-bg--success u-bg--to-primary" type="button">
     <%= render 'objects/slices/icon_left', icon: 'success', name: '', desc: 'Something went correct! :)' %>
   </button>
 
   <br>
   <br>
 
-  <button class="o-btn u-bg--primary u-bg--to-danger" type="button">
-    <%= render 'objects/slices/basic_slice', color_variant: 'u-color-strength--100' %>
+  <button class="w-btn u-bg--primary u-bg--to-danger" type="button">
+    <%= render 'objects/slices/basic_slice' %>
   </button>
 
-  <button class="o-btn u-bg--silver u-bg--to-primary" type="button">
+  <button class="w-btn u-bg--silver u-bg--to-primary" type="button">
     <%= render 'objects/slices/basic_slice' do %>
       <p class="c-text--label u-color-strength--100">
         <%= render 'objects/icons/rocket', variant: 'inline' %>
@@ -116,9 +116,9 @@
   <br>
   <br>
 
-  <button class="o-btn u-bg--silver u-bg--to-primary" type="button">
+  <button class="w-btn u-bg--silver u-bg--to-primary" type="button">
     <%= render 'objects/slices/icon_left', desc: '' %>
-    <%= render 'objects/slices/basic_slice', padding: '' do %>
+    <%= render 'objects/slices/basic_slice' do %>
       <h1 class="c-text--lead">About this launch</h1>
       <p class="c-text--body"> Unfortunately box shadow must be defined as a single rule, without the ability, like border, to be broken up into separate parts for positioning</p>
     <% end %>
