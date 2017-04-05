@@ -16,3 +16,21 @@
 .w-btn {
   @include w-btn;
 }
+
+.c-btn {
+  @include c-text--label;
+  @include w-btn;
+  padding: 10px 15px;
+  opacity: 1;
+  background-color: color('primary');
+  border-color: color('primary', 115);
+  color: color('white');
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: color('primary', 115);
+    border-color: color('primary', 130);
+    color: color('white');
+  }
+}
