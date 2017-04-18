@@ -31,6 +31,11 @@ class Navigation
         disabled: false,
       },
       {
+        name: 'Blocks',
+        path: view_path.blocks_path,
+        disabled: false,
+      },
+      {
         name: 'Internal Plugins',
         path: view_path.root_path,
         disabled: true,

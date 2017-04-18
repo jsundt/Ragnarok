@@ -20,8 +20,25 @@
   <body>
     <%= render 'navigation/navbar' %>
 
-    <div class="content-wrap js-content-wrap u-padding-t-100">
-      <%= yield %>
+    <div class="content-wrap js-content-wrap" style="padding-top: 60px;">
+      <% if content_for?(:side_nav) %>
+        <div class="sidebar-wrapper">
+          <div class="section-nav js-scrollbar">
+            <%= yield(:side_nav) %>
+          </div>
+          <div class="section-wrap js-page-wrapper js-scrollbar">
+            <%= yield %>
+
+            <%= yield(:page_footer) %>
+          </div>
+        </div>
+      <% else %>
+        <div class="page-wrapper js-page-wrapper js-scrollbar">
+          <%= yield %>
+
+          <%= yield(:page_footer) %>
+        </div>
+      <% end %>
     </div>
   </body>
 </html>

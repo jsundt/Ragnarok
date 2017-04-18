@@ -11,6 +11,7 @@
 }
 
 
+
 //----------------------------------------------\\
 // Charlie card wrapper
 //----------------------------------------------\\
@@ -21,6 +22,7 @@
   border-radius: $br;
   margin: 15px 0;
   box-shadow: 0 0 0 1px color('black', A5);
+  // border: 1px solid transparent;
 
   transition: background-color 0.2s,
               color 0.2s;
@@ -35,6 +37,7 @@
     border-bottom-right-radius: $br;
   }
 }
+
 
 
 //----------------------------------------------\\
@@ -60,7 +63,7 @@
   position: relative;
   border-radius: $br-50;
   border: 1px solid transparent;
-  border-bottom-width: 2px;
+  border-bottom-width: 3px;
 
   transition: background-color 0.2s,
               border-color 0.2s,

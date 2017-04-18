@@ -12,4 +12,8 @@ class WelcomeController < ApplicationController
 
     render file: 'objects/index'
   end
+
+  def blocks
+    render file: 'blocks/company_profile'
+  end
 end
