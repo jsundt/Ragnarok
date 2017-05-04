@@ -8,6 +8,17 @@
 @mixin w-slice() {
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
 }
 
 
@@ -30,11 +41,21 @@
   > :first-child {
     border-top-left-radius: $br;
     border-top-right-radius: $br;
+
+    &.w-slice {
+      > :first-child { border-top-left-radius: $br; }
+      > :last-child { border-top-right-radius: $br; }
+    }
   }
 
   > :last-child {
     border-bottom-left-radius: $br;
     border-bottom-right-radius: $br;
+
+    &.w-slice {
+      > :first-child { border-bottom-left-radius: $br; }
+      > :last-child { border-bottom-right-radius: $br; }
+    }
   }
 }
 
@@ -51,8 +72,9 @@
   display: inline-block;
   outline: none;
   padding: 0;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  // margin-top: 2px;
+  // margin-bottom: 2px;
+  margin: 0;
   box-sizing: border-box;
   vertical-align: top; // make sure <button> renders inline with <a>
   text-decoration: none;
@@ -72,11 +94,21 @@
   > :first-child {
     border-top-left-radius: $br-50;
     border-top-right-radius: $br-50;
+
+    &.w-slice {
+      > :first-child { border-top-left-radius: $br-50; }
+      > :last-child { border-top-right-radius: $br-50; }
+    }
   }
 
   > :last-child {
     border-bottom-left-radius: $br-50;
     border-bottom-right-radius: $br-50;
+
+    &.w-slice {
+      > :first-child { border-bottom-left-radius: $br-50; }
+      > :last-child { border-bottom-right-radius: $br-50; }
+    }
   }
 
   &:hover,

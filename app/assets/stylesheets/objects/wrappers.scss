@@ -20,11 +20,15 @@
 .c-btn {
   @include c-text--label;
   @include w-btn;
-  padding: 10px 15px;
+  padding: 5px 15px;
+  min-height: 45px;
   opacity: 1;
   background-color: color('primary');
   border-color: color('primary', 115);
   color: color('white');
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   &:hover,
   &:active,
