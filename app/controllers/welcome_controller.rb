@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
   end
 
   def objects
-    @team_members = TeamMembers.new().members
+    @team_members = TeamMembers.new().profile_cards
     @buttons = ObjectVariants::Buttons.new()
 
     render file: 'objects/index'

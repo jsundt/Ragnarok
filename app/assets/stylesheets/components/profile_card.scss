@@ -6,8 +6,17 @@
 //----------------------------------------------\\
 
 .c-profile-card {
-  @include w-card();
+  @include w-btn();
+  background: color('white');
+  color: color('charcoal');
+  border-color: color('silver');
   display: flex;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: color('primary');
+  }
 }
 
   .c-profile-card__avatar {
@@ -15,8 +24,6 @@
     width: 100px;
     height: 100px;
     flex-shrink: 0;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
   }
 
   .c-profile-card__content {
