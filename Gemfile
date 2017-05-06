@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 ### Base app
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.1.0'
 gem 'pg'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.7'
 
 ### Front-end tools
 gem 'sass-rails', '~> 5.0'
