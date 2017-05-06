@@ -1,4 +1,10 @@
 PATH
+  remote: ../fenrir_view
+  specs:
+    fenrir_view (0.10.0)
+      rails (>= 3.2.0)
+
+PATH
   remote: ../fenrir
   specs:
     fenrir (0.1.13)
@@ -150,6 +156,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   fenrir!
+  fenrir_view!
   jquery-rails
   listen (~> 3.0.5)
   pg

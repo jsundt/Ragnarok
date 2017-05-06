@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 
 ### Front-end framework
 gem 'fenrir', path: '../fenrir'
+gem 'fenrir_view', path: '../fenrir_view'
 
 
 

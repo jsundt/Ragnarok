@@ -1,0 +1,11 @@
+<div class="header">
+  <h1>This is a header component with the title: <%= title %></h1>
+  <h3>And subtitle <%= subtitle %></h3>
+  <% if show_links? %>
+    <ul>
+      <% links.each do |link| %>
+        <li><%= link %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
