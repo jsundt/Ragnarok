@@ -8,12 +8,5 @@ Rails.application.routes.draw do
   get '/objects', to: 'welcome#objects', as: 'objects'
   get '/blocks', to: 'welcome#blocks', as: 'blocks'
 
-
   mount FenrirView::Engine => "/fenrir"  
-
-  FenrirView::Engine.routes.draw do
-    root to: "styleguide#index"
-
-    resources :styleguide, only: [:index, :show], path: FenrirView.configuration.styleguide_path
-  end
 end
