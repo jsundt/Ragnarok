@@ -1,10 +1,15 @@
 <div class="w-card u-bg--white">
-  <h1 class="c-text--title">This is a card component with the title: <%= title %></h1>
+  <% if show_image? %>
+    <%= image_tag(image, style: "width: 100%;") %>
+  <% end %>
 
-  <% if show_links? %>
+  <h1 class="c-text--title"><%= title %></h1>
+  <p class="c-text--body"><%= description %></p>
+
+  <% if show_data? %>
     <ul>
-      <% links.each do |link| %>
-        <li><%= link %></li>
+      <% data.each do |data| %>
+        <li><%= data[:title] %>: <%= data[:number] %></li>
       <% end %>
     </ul>
   <% end %>

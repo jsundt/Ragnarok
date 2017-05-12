@@ -1,12 +1,20 @@
 class CardComponent < FenrirView::Presenter
-  properties :title, :subtitle
-  property :links, default: []
+  properties :title, :description, :link, :image
+  property :data, default: []
 
   def title
     properties[:title].titleize
   end
 
-  def show_links?
-    links.any?
+  def linked?
+    link.present?
+  end
+
+  def show_image?
+    image.present?
+  end
+
+  def show_data?
+    data.any?
   end
 end
