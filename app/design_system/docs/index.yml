@@ -1,0 +1,24 @@
+overview:
+  index: "Welcome"
+  principles: "Design Principles"
+  downloads: "Downloads"
+  changes: "Change Log"
+
+design:
+  index: "Design Language"
+  colors: "Color Palette"
+  typography: "Typography Hierarchy"
+  layout: "Layout Guidelines"
+
+blocks:
+  index: "Building Blocks"
+  wrappers: "Wrappers"
+  objects: "Objects"
+  grid: "Grid"
+
+utilities:
+  index: "Utilities"
+  spacing: "Spacing"
+  colors: "Colors"
+  animation: "Animation"
+  javascript: "Javascript"

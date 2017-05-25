@@ -1,4 +1,4 @@
-class CardComponent < FenrirView::Presenter
+class CardFacade < FenrirView::Presenter
   properties :title, :description, :link, :image
   property :data, default: []
 
