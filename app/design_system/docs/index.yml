@@ -1,7 +1,6 @@
 system_info:
   overview:
     index: "Welcome"
-    principles: "Design Principles"
     downloads: "Downloads"
     changes: "Change Log"
 
@@ -9,7 +8,7 @@ system_info:
 design_language:
 
   guidelines:
-    index: "Design Guidelines"
+    index: "Guidelines"
     colors: "Color Palette"
     typography: "Typography Hierarchy"
     layout: "Layout Guidelines"
@@ -17,6 +16,7 @@ design_language:
 
   assets:
     index: "Assets"
+    brand: "Brand"
     icons: "Icons"
     illustrations: "Illustrations"
     images: "Images"
@@ -26,12 +26,19 @@ building_blocks:
 
   grid:
     index: "Grid"
+    columns: "Columns"
+    media: "Media Queries"
 
   wrappers:
     index: "Wrappers"
+    section: "Section"
+    card: "Card"
+    button: "Button"
 
   objects:
     index: "Objects"
+    icon: "Icon"
+    image: "Image"
 
   utilities:
     index: "Utilities"
@@ -39,3 +46,5 @@ building_blocks:
     text: "Text"
     spacing: "Spacing"
     sizing: "Sizing"
+
+# UI Patterns are automatically loaded by the styleguide
