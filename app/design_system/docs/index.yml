@@ -1,24 +1,41 @@
-overview:
-  index: "Welcome"
-  principles: "Design Principles"
-  downloads: "Downloads"
-  changes: "Change Log"
+system_info:
+  overview:
+    index: "Welcome"
+    principles: "Design Principles"
+    downloads: "Downloads"
+    changes: "Change Log"
 
-design:
-  index: "Design Language"
-  colors: "Color Palette"
-  typography: "Typography Hierarchy"
-  layout: "Layout Guidelines"
 
-blocks:
-  index: "Building Blocks"
-  wrappers: "Wrappers"
-  objects: "Objects"
-  grid: "Grid"
+design_language:
 
-utilities:
-  index: "Utilities"
-  spacing: "Spacing"
-  colors: "Colors"
-  animation: "Animation"
-  javascript: "Javascript"
+  guidelines:
+    index: "Design Guidelines"
+    colors: "Color Palette"
+    typography: "Typography Hierarchy"
+    layout: "Layout Guidelines"
+    voice: "Tone of Voice"
+
+  assets:
+    index: "Assets"
+    icons: "Icons"
+    illustrations: "Illustrations"
+    images: "Images"
+
+
+building_blocks:
+
+  grid:
+    index: "Grid"
+
+  wrappers:
+    index: "Wrappers"
+
+  objects:
+    index: "Objects"
+
+  utilities:
+    index: "Utilities"
+    colors: "Colors"
+    text: "Text"
+    spacing: "Spacing"
+    sizing: "Sizing"
