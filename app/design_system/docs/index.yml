@@ -34,11 +34,15 @@ building_blocks:
     section: "Section"
     card: "Card"
     button: "Button"
+    input: "Input"
 
   objects:
     index: "Objects"
     icon: "Icon"
     image: "Image"
+    illustration: "Illustration"
+    typography: "Typography"
+    lists: "Lists"
 
   utilities:
     index: "Utilities"
