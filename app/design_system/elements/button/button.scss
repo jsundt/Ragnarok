@@ -2,7 +2,7 @@
 // Button Element
 
 .e-button {
-  @include c-text--label;
+  @include o-text--label;
   @include w-btn;
   padding: 5px 15px;
   min-height: 45px;

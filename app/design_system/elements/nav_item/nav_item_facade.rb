@@ -6,7 +6,7 @@ class NavItemFacade < FenrirView::Presenter
   end
 
   def style
-    link_style = properties[:style] || "c-text--note"
+    link_style = properties[:style] || "o-text--note"
     link_style << " e-nav-item__link"
     link_style << " u-color--success" if active?
 

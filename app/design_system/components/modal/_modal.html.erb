@@ -1,11 +1,11 @@
 <div class="c-modal js-modal">
   <div class="c-modal__header u-padding-y-25 <%= style %>">
-    <h1 class="c-text--lead"><%= title %></h1>
+    <h1 class="o-text--lead"><%= title %></h1>
   </div>
 
   <div class="w-slice u-padding-y-25 u-bg--white-115">
     <% if has_content? %>
-      <p class="c-text--product"><%= modal_body %></p>
+      <p class="o-text--product"><%= modal_body %></p>
     <% elsif has_partial? %>
       <%= render modal_body %>
     <% end %>

@@ -22,6 +22,10 @@
 @import 'objects/*';
 @import 'components/*';
 
+@import 'elements';
+@import 'components';
+@import 'modules';
+
 @import 'fenrir/utilities'; // Generate utility classes for use in html files
 
 body {
